@@ -5,6 +5,9 @@
     "publish-ci": "lerna publish from-package -y",
     "changeset": "changeset"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@penja-penja"
+  },
   "devDependencies": {
     "add": "^2.0.6",
     "eslint": "^7.15.0",
