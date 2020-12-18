@@ -1,0 +1,18 @@
+@import "../../../global/style.scss";
+
+label {
+  margin-right: 0.5rem;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  text-align: right;
+}
+
+select {
+  min-width: 3.5rem;
+  padding: 0.25rem 1rem 0.25rem 0;
+}

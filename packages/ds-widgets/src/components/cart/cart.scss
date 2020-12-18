@@ -1,0 +1,24 @@
+@import "../../global/style.scss";
+
+.cart {
+  border: 1px solid #dedfdc;
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+.cart-item {
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.cart-item__content {
+  width: 100%;
+}
+
+.cart-total {
+  color: var(--wx-primary-color);
+  font-weight: bold;
+  text-align: right;
+}

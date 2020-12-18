@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <link rel="stylesheet" href="/build/wowx-components.css">
+    <script type="module" src="/build/wowx-components.esm.js"></script>
+    <script nomodule src="/build/wowx-components.js"></script>
+  </head>
+  <body>
+    <wowx-cart></wowx-cart>
+    <button onclick='addProduct()'>Add</button>
+    <button onclick='addProduct2()'>Add2</button>
+  </body>
+  <script>
+    const cart = document.querySelector('wowx-cart');
+    cart.cartItems = [];
+  
+    function addProduct2() {
+      cart.cartItems = [
+        ...cart.cartItems,
+        {
+          id: 'product-2',
+          qty: 1,
+          image: {
+            alt: 'Ham',
+            src: 'https://picsum.photos/80/80'
+          },
+          header: {
+            link: '/',
+            manufacturerName: 'Don',
+            productName: 'Honey Roased Sliced Ham'
+          },
+          subtotal: {
+            maxQty: 10,
+            price: 3.2
+          }
+        }
+      ]
+    }
+
+    function addProduct(){
+      cart.cartItems = [
+        ...cart.cartItems,
+        {
+          id: 'product-1',
+          qty: 1,
+          image: {
+            alt: 'coke',
+            src: 'https://picsum.photos/80/80'
+          },
+          header: {
+            link: '/',
+            manufacturerName: 'Coke Cola',
+            productName: 'Coke zero'
+          },
+          subtotal: {
+            maxQty: 5,
+            price: 5.5
+          }
+        }
+      ]
+    }
+  </script>
+</html>
+
