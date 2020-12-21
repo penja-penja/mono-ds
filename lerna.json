@@ -2,12 +2,17 @@
   "packages": [
     "packages/*"
   ],
-  "npmClient": "npm",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
   "command": {
     "publish": {
+      "conventionalCommits": true,
       "ignoreChanges": ["ignored-file", "*.md"],
       "message": "chore(release): publish",
       "registry": "https://npm.pkg.github.com"
+    },
+    "version": {
+      "message": "chore(release): release"
     }
   },
   "version": "independent"

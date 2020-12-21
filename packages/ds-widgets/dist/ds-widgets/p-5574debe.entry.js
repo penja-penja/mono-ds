@@ -1,0 +1,1 @@
+import{r,h as s}from"./p-1a95fc15.js";const t=class{constructor(s){r(this,s)}render(){return s("div",null,s("p",null,"Total savings: ",this.savings))}};t.style="";export{t as wowx_cart_footer}

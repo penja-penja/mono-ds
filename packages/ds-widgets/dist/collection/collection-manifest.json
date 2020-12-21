@@ -1,0 +1,16 @@
+{
+  "entries": [
+    "./components/cart/cart.js",
+    "./components/cart/cart-footer/cart-footer.js",
+    "./components/cart/cart-header/cart-header.js",
+    "./components/cart/cart-image/cart-image.js",
+    "./components/cart/cart-subtotal/cart-subtotal.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.0.3",
+    "typescriptVersion": "4.0.2"
+  },
+  "collections": [],
+  "bundles": []
+}
